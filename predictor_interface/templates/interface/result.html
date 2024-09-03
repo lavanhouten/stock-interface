@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Prediction Result</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Stock Prediction Result</h1>
+    <div>{{ plot_url|safe }}</div>
+    <a href="{% url 'index' %}">Back to Upload</a>
+</body>
+</html>

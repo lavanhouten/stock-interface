@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Model</title>
+</head>
+<body>
+    <h1>Upload CSV for Stock Prediction</h1>
+    <form method="post" enctype="multipart/form-data" action="{% url 'train' %}">
+        {% csrf_token %}
+        <h2>Upload Training Data</h2>
+        <input type="file" name="train_file" accept=".csv">
+        <button type="submit">Train Model</button>
+    </form>
+</body>
+</html>

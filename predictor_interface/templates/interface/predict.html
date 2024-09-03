@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Stock Prices</title>
+</head>
+<body>
+    <h1>Upload CSV for Stock Prediction</h1>
+    <form method="post" enctype="multipart/form-data" action="{% url 'predict' %}">
+        {% csrf_token %}
+        <h2>Upload Prediction Data</h2>
+        <input type="file" name="predict_file" accept=".csv">
+        <button type="submit">Predict Stock Prices</button>
+    </form>
+</body>
+</html>
